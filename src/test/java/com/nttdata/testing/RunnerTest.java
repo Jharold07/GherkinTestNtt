@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "com.nttdata.testing",
-        tags = "@Booking")
-public class RunnerTest {
-
-}
+        glue = "com.nttdata.testing.stepDefinitions",
+        tags = "@AllUsers",
+        plugin = {"pretty"}
+)
+public class RunnerTest {}
